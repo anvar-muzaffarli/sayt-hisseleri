@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'Slussen';
+    src: url(./fonts/Slussen-Regular.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Slussen';
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    min-width: 700px;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 171px;
+}
+body {
+    background-image: linear-gradient(to right, #b304d6, #1035da);
+    overflow-x:hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:40px 120px;
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    color:#aaa;
+    padding: 10px;
+}
+
+section.introduction {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 90px;
+    overflow: hidden;
+}
+
+
+section img {
+    /* width: 100%; */
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+
+}
+
+.introduction .left-side {
+    z-index: 10;
+    left: 52%;
+    top: 5%;
+   
+}
+
+.introduction .right-side {
+    position: absolute;
+    z-index: 10;
+    right: 15%;
+    
+}
+
+.text {
+    position: absolute;
+    top: 31%;
+    right: 12%;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 4.5vw;
+    z-index: 9;
+}
+
+
+.enroll {
+    text-decoration: none;
+    padding: 8px 28px;
+    border-radius: 40px;
+    background-color: #fff;
+    color: #2b1055;
+    display: inline-block;
+    z-index: 9;
+    position: absolute;
+    top: 34%;
+    left: 44%;
+    transform: translateY(100px);
+}
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .sec parallax */
+
+.sec {
+   
+    padding:100px;
+    background-image: linear-gradient(to right, #b304d6, #1035da);
+    height: 100vh;
+}
+
+
+.sec h2 {
+    font-size:3.5rem;
+    margin-bottom: 10px;
+    color:#fff;
+}
+
+.sec p {
+    font-size:1.2rem;
+    margin-bottom: 10px;
+    color:#fff;
+}
+
+/* basqa komponent */
+.scrollSec {
+    padding: 50px 0;
+    color:white;
+}
+
+.col {
+    width: 50%;
+}
+
+#vertical {height: 200vh;width: 100vw;}
+
+.vertical__content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.vertical__content .col_left {height: 100%;}
+
+.vertical__content .col.col_right {
+    width: 40%;
+}
+
+.vertical__item:not(:last-child) {
+    margin-bottom: 240px;
+}
+
+#horizontal {
+    padding: 100px 0;
+}
+
+.horizontal__content {
+    display: flex;
+}
+
+.horizontal__item {
+    border: 1px solid #efefef;
+    padding: 200px 150px;
+
+}
+.horizontal__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.horizontal__num {
+    font-size: 80px;
+    font-weight: 900;
+    font-stretch: condensed;
+    color: #ff98a2;
+}
+
+/* parallax background */
+
+.parallax-background {
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.815) 0%, rgba(255,255,255,0.815) 100%),url(https://itbrains.edu.az/src/img/course.jpg);
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
